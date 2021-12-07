@@ -19,7 +19,7 @@ namespace DapperDemoApp.Repositories
         {
             try
             {
-                var query = "SELECT * FROM Products";
+                var query = "SELECT * FROM Product";
                 using (var connection = CreateConnection())
                 {
                     return (await connection.QueryAsync<Product>(query)).ToList();
@@ -35,7 +35,7 @@ namespace DapperDemoApp.Repositories
         {
             try
             {
-                var query = "SELECT * FROM Products WHERE Id = @Id";
+                var query = "SELECT * FROM Product WHERE Id = @Id";
 
                 var parameters = new DynamicParameters();
                 parameters.Add("Id", id, DbType.Int32);
@@ -55,7 +55,7 @@ namespace DapperDemoApp.Repositories
         {
             try
             {
-                var query = "INSERT INTO Products (Name, Price, Quantity) VALUES (@Name, @Price, @Quantity)";
+                var query = "INSERT INTO Product (Name, Price, Quantity) VALUES (@Name, @Price, @Quantity)";
 
                 var parameters = new DynamicParameters();
                 parameters.Add("Name", entity.Name, DbType.String);
@@ -77,7 +77,7 @@ namespace DapperDemoApp.Repositories
         {
             try
             {
-                var query = "UPDATE Products SET Name = @Name, Price = @Price, Quantity = @Quantity WHERE Id = @Id";
+                var query = "UPDATE Product SET Name = @Name, Price = @Price, Quantity = @Quantity WHERE Id = @Id";
 
                 var parameters = new DynamicParameters();
                 parameters.Add("Name", entity.Name, DbType.String);
@@ -100,7 +100,7 @@ namespace DapperDemoApp.Repositories
         {
             try
             {
-                var query = "DELETE FROM Products WHERE Id = @Id";
+                var query = "DELETE FROM Product WHERE Id = @Id";
 
                 var parameters = new DynamicParameters();
                 parameters.Add("Id", entity.Id, DbType.Int32);
