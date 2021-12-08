@@ -63,3 +63,5 @@ C:\Users\user\Documents\.Net\DapperDemoApp\DapperDemoApp\obj\Debug\net5.0\Dapper
 C:\Users\user\Documents\.Net\DapperDemoApp\DapperDemoApp\obj\Debug\net5.0\ref\DapperDemoApp.dll
 C:\Users\user\Documents\.Net\DapperDemoApp\DapperDemoApp\obj\Debug\net5.0\DapperDemoApp.pdb
 C:\Users\user\Documents\.Net\DapperDemoApp\DapperDemoApp\obj\Debug\net5.0\DapperDemoApp.genruntimeconfig.cache
+C:\Users\user\Documents\.Net\DapperDemoApp\DapperDemoApp\obj\Debug\net5.0\Razor\Views\Products\Details.cshtml.g.cs
+C:\Users\user\Documents\.Net\DapperDemoApp\DapperDemoApp\obj\Debug\net5.0\Razor\Views\Products\Create.cshtml.g.cs
